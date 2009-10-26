@@ -60,30 +60,31 @@
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_restricted.png</texture>
+				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated R)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_pg13.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
+				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated PG-13)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_pg.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
+				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_nc17.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
+				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated NC)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_g.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
+				<colordiffuse>FlagDiffuse</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated G)</visible>
 			</control>
 			<control type="image">
