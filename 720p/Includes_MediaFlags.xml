@@ -168,10 +168,7 @@
 				</control>
 				<control type="image">
 					<posx>35</posx>
-					<posy>530</posy>
-					<width>60</width>
-					<height>40</height>
-					<colordiffuse>FlagDiffuse</colordiffuse>
+					<include>PosterMediaFlagsVars2</include>
 					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
 					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
 				</control>
