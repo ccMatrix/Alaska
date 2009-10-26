@@ -130,9 +130,15 @@
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/AudioCodec/frame.png</texture>
 				</control>
+				<control type="image">
+					<posx>5</posx>
+					<include>PosterMediaFlagsVars2</include>
+					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
+					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+				</control>
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
-					<posx>3</posx>
+					<posx>65</posx>
 					<posy>525</posy>
 					<width>33</width>
 					<height>45</height>
@@ -144,7 +150,7 @@
 				</control>
 				<control type="label">
 					<label>5.1</label>
-					<posx>3</posx>
+					<posx>65</posx>
 					<posy>525</posy>
 					<width>33</width>
 					<height>45</height>
@@ -156,7 +162,7 @@
 				</control>
 				<control type="label">
 					<label>7.1</label>
-					<posx>3</posx>
+					<posx>65</posx>
 					<posy>525</posy>
 					<width>33</width>
 					<height>45</height>
@@ -165,12 +171,6 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,8)</visible>
-				</control>
-				<control type="image">
-					<posx>35</posx>
-					<include>PosterMediaFlagsVars2</include>
-					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
-					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
 				</control>
 			</control>
 
