@@ -130,12 +130,6 @@
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/AudioCodec/frame.png</texture>
 				</control>
-				<control type="image">
-					<posx>5</posx>
-					<include>PosterMediaFlagsVars2</include>
-					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
-					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
-				</control>
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
 					<posx>65</posx>
@@ -172,6 +166,12 @@
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,8)</visible>
 				</control>
+				<control type="image">
+					<posx>5</posx>
+					<include>PosterMediaFlagsVars2</include>
+					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
+					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+				</control>
 			</control>
 
 			<!-- Studio Panel -->
@@ -193,7 +193,7 @@
 					<width>88</width>
 					<height>59</height>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/Studios/,.png]</texture>
 				</control>
 			</control>
 
@@ -213,7 +213,7 @@
 					<width>88</width>
 					<height>59</height>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/Studios/,.png]</texture>
 				</control>
 			</control>
 		</control>
