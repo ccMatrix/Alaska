@@ -32,7 +32,7 @@
 				<height>50</height>
 				<texture>dialogs/notification.png</texture>
 			</control>
-	
+
 			<control type="label" id="401">
 				<description>heading</description>
 				<posx>310</posx>
@@ -44,7 +44,7 @@
 				<font>Font_ProgressDialog</font>
 				<label>-</label>
 			</control>
-	
+
 			<control type="label" id="402">
 				<description>Line 1</description>
 				<posx>310</posx>
