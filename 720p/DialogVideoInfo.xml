@@ -190,7 +190,6 @@
 				<posx>0</posx>
 				<posy>140</posy>
 				<width>150</width>
-				<height>0</height>
 				<font>Font_OSDDetail</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
@@ -210,7 +209,6 @@
 				<posx>0</posx>
 				<posy>167</posy>
 				<width>150</width>
-				<height>0</height>
 				<font>Font_OSDDetail</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
