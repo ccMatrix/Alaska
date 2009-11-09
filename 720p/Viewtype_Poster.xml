@@ -350,7 +350,8 @@
 		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
-			<visible>Control.IsVisible(57)</visible>
+			<visible>Control.IsVisible(57) | Control.IsVisible(50)</visible>
+			<!-- 57 for seasons, 50 for tv show list -->
 			<posx>840</posx>
 			<posy>460</posy>
 			<include>Animation_SlideUpFadeOut</include>
