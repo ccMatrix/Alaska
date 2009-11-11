@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_CommonFilter</include>
 
 		<control type="grouplist" id="3">
 			<description>Button Area</description>
@@ -42,7 +43,7 @@
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>Text</textcolor>
 			<align>left</align>
 			<focusedcolor>TextFocused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
@@ -51,7 +52,7 @@
 		<control type="radiobutton" id="8">
 			<description>Default Radio Button</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>Text</textcolor>
 			<align>left</align>
 			<focusedcolor>TextFocused</focusedcolor>
 		</control>
@@ -59,7 +60,7 @@
 		<control type="spincontrolex" id="9">
 			<description>Default Spin Control</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>Text</textcolor>
 			<align>left</align>
 			<focusedcolor>TextFocused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
@@ -73,7 +74,7 @@
 			<description>Default Category Button</description>
 			<width>150</width>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>Text</textcolor>
 			<texturefocus border="1">ButtonFo.png</texturefocus>
 			<focusedcolor>TextFocused</focusedcolor>
 		</control>
