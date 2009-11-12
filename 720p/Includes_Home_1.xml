@@ -465,37 +465,37 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3704)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/extras/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3703)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3702)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/extras/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3701)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">$INFO[Skin.String(CustomWeatherImage)]</imagepath>
-					<visible>!Skin.String(CustomWeatherFolder)</visible>
+					<visible>!IsEmpty(CustomWeatherImage) && !Skin.String(CustomWeatherFolder)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">$INFO[Skin.String(CustomWeatherFolder)]</imagepath>
-					<visible>Skin.String(CustomWeatherFolder) + !Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
+					<visible>!IsEmpty(CustomWeatherFolder) && Skin.String(CustomWeatherFolder) + !Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/media/extras/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
