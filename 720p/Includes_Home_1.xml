@@ -619,6 +619,7 @@
 			<width>348</width>
 			<height>44</height>
 			<texture>mainmenu/homeshade.png</texture>
+			<colordiffuse>HomeFrameShade</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MainMenuFrame">
