@@ -104,6 +104,7 @@
 		<texturedownfocus>ArrowDownFo.png</texturedownfocus>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 	</default>
 
 	<default type="spincontrol">
@@ -124,6 +125,7 @@
 		<disabledcolor>TextDisabled</disabledcolor>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 	</default>
 
 	<default type="sliderex">
