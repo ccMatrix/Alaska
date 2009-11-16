@@ -619,7 +619,7 @@
 			<width>348</width>
 			<height>44</height>
 			<texture>mainmenu/homeshade.png</texture>
-			<colordiffuse>HomeFrameShade</colordiffuse>
+	<colordiffuse>HomeFrameDiffuseColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MainMenuFrame">
@@ -651,6 +651,7 @@
 		<scroll>true</scroll>
 		<font>Font_MainMenuLabel</font>
 		<textcolor>MainMenuLabel</textcolor>
+		<focusedcolor>MainMenuLabel</focusedcolor>
 	</include>
 
 	<include name="pos350">
@@ -785,26 +786,22 @@
 		</control>
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3502)</onfocus>
-			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvstudios)</visible>
-		</control>
-		<control type="button" id="3999">
-			<onfocus>SetFocus(3503)</onfocus>
 			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvgenres)</visible>
 		</control>
 		<control type="button" id="3999">
-			<onfocus>SetFocus(3504)</onfocus>
+			<onfocus>SetFocus(3503)</onfocus>
 			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvactors)</visible>
 		</control>
 		<control type="button" id="3999">
-			<onfocus>SetFocus(3505)</onfocus>
+			<onfocus>SetFocus(3504)</onfocus>
 			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvyears)</visible>
 		</control>
 		<control type="button" id="3999">
-			<onfocus>SetFocus(3506)</onfocus>
+			<onfocus>SetFocus(3505)</onfocus>
 			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvfiles)</visible>
 		</control>
 		<control type="button" id="3999">
-			<onfocus>SetFocus(3507)</onfocus>
+			<onfocus>SetFocus(3506)</onfocus>
 			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvsettings)</visible>
 		</control>
 		<!-- Pictures -->
@@ -933,7 +930,7 @@
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicvids)</visible>
 			</control>
-			<control type="button" id="3503">
+			<control type="button" id="3203">
 				<label>13395</label>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
