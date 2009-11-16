@@ -58,6 +58,7 @@
 		<alttexturenofocus>arrowdownnf.png</alttexturenofocus>
 		<alttexturefocus>arrowdownfo.png</alttexturefocus>
 		<pulseonselect>false</pulseonselect>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 	</default>
 
 	<default type="radiobutton">

@@ -1770,6 +1770,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowdownfo.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
 				</control>
 
@@ -1782,6 +1783,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowupnf.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
@@ -1794,6 +1796,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowdownnf.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
