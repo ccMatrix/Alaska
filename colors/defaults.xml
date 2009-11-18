@@ -109,7 +109,7 @@
 	<!-- Favorites -->
 
 	<color name="FavListItem">FF929191</color>
-	<color name="FavListItemSelected">ffcc0000</color>
+	<color name="FavListItemSelected">ff800000</color>
 	<color name="FavListItemFocusedSelected">CCcccccc</color>
 
 	<!-- Filemanager -->

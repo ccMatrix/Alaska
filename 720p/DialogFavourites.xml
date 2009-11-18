@@ -73,6 +73,7 @@
 					<width>740</width>
 					<height>66</height>
 					<texture>favourites/focus_bar.png</texture>
+					<colordiffuse>FavListItemSelected</colordiffuse>
 				</control>
 
 				<control type="label">
