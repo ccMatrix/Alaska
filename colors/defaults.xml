@@ -108,9 +108,10 @@
 
 	<!-- Favorites -->
 
+	<color name="FavListPanel">CCCCCCCC</color>
 	<color name="FavListItem">FF929191</color>
-	<color name="FavListItemSelected">ff800000</color>
-	<color name="FavListItemFocusedSelected">CCcccccc</color>
+	<color name="FavListItemSelected">FF800000</color>
+	<color name="FavListItemFocusedSelected">CCCCCCCC</color>
 
 	<!-- Filemanager -->
 
