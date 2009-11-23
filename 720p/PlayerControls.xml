@@ -3,6 +3,8 @@
 <window type="dialog" id="400">
 	<defaultcontrol always="true">1</defaultcontrol>
 
+	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
+
 	<coordinates>
 		<system>1</system>
 		<posx>100</posx>
