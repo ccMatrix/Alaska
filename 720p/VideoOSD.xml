@@ -5,7 +5,7 @@
 	<controls>
 
 		<control type="button" id="410">
-			<onfocus>Dialog.Close(142,force)</onfocus>
+			<onfocus>Dialog.Close(142)</onfocus>
 			<onfocus>SetFocus(2001)</onfocus>
 		</control>
 		
@@ -165,6 +165,27 @@
 					<onclick>ActivateWindow(124)</onclick>
 				</control>
 			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>116</posy>
+				<width>300</width>
+				<height>18</height>
+				<aligny>center</aligny>
+				<font>Font_ListDetail</font>
+				<label>$INFO[VideoPlayer.Time]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
+			</control>
+			<control type="label">
+				<posx>185</posx>
+				<posy>116</posy>
+				<width>300</width>
+				<height>18</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<font>Font_ListDetail</font>
+				<label>($INFO[System.Time])</label>
+				<textcolor>OSDPlayingDuration</textcolor>
+			</control>
 			<control type="progress" id="23">
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
@@ -172,10 +193,21 @@
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<info>Player.Progress</info>
-				<posx>30</posx>
+				<posx>205</posx>
 				<posy>118</posy>
-				<width>1040</width>
+				<width>870</width>
 				<height>19</height>
+			</control>
+			<control type="label">
+				<posx>1095</posx>
+				<posy>116</posy>
+				<width>300</width>
+				<height>18</height>
+				<aligny>center</aligny>
+				<align></align>
+				<font>Font_ListDetail</font>
+				<label>$INFO[VideoPlayer.Duration]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -185,7 +217,7 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<label>($INFO[Player.FinishTime])</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="group">
