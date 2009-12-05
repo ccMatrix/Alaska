@@ -209,13 +209,26 @@
 
 			<control type="group">
 				<posx>462</posx>
-				<posy>-30</posy>
+				<posy>-59</posy>
 				<visible>!Skin.HasSetting(nostudiopanel)</visible>
 				<control type="image">
 					<width>92</width>
-					<height>63</height>
+					<height>92</height>
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/frame_studio.png</texture>
+					<texture>flags/frame_studio_large.png</texture>
+					<visible>!IsEmpty(ListItem.Studio)</visible>
+				</control>
+				<control type="label">
+					<label fallback="?">$INFO[ListItem.Studio]</label>
+					<posx>3</posx>
+					<posy>58</posy>
+					<width>86</width>
+					<include>PosterMediaFlagsVars</include>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_Studio</font>
+					<textcolor>FlagText</textcolor>
+					<wrapmultiline>true</wrapmultiline>
 					<visible>!IsEmpty(ListItem.Studio)</visible>
 				</control>
 				<control type="image">
